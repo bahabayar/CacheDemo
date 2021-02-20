@@ -1,0 +1,26 @@
+﻿@model List<CacheExamplee.EntityContext.Product>
+@{
+    ViewBag.Title = "List";
+}
+
+<h2>List</h2>
+
+
+<table class="table">
+
+    <tr>
+        <td>ID</td>
+        <td>Name</td>
+    </tr>
+    @foreach (var product in Model)
+    {
+        <tr>
+            <td>@product.ProductID</td>
+            <td>@product.ProductName</td>
+
+        </tr>
+    }
+
+
+</table>
+
